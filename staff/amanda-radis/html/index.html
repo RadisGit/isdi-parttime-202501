@@ -3,13 +3,96 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro to HTML</title>
 </head>
 
 <body>
-    <h1>hello</h1>
-    <title>World</title>
+    <h1>Hello world</h1>
+    <h2>The summer is coming!</h2>
+   
+</head>
+<body>
+    <div class="sol">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </body>
+</html>
+</body>
+<ul>
+    <li>cerveja</li>
+    <li>tacos suadero</li>
+    <li>perros en la piscina</li>
 
+ </ul>
+
+<li>perros en la agua</li>
+<li>tacos suadero</li>
+<li>cerveja</li>
+<style>
+
+
+    .sol {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        border-radius: 50%;
+        position: relative;
+        box-shadow: 0 0 20px yellow;
+    }
+    .sol::before,
+    .sol::after,
+    .sol div {
+        content: '';
+        position: absolute;
+        background-color: yellow;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+    .sol::before {
+        top: -30px;
+        left: 40px;
+    }
+
+    .sol::after {
+        bottom: -30px;
+        left: 40px;
+    }
+
+    .sol div:nth-child(1) {
+        top: 40px;
+        left: -30px;
+    }
+
+    .sol div:nth-child(2) {
+        top: 40px;
+        right: -30px;
+    }
+
+    .sol div:nth-child(3) {
+        top: -10px;
+        left: -10px;
+    }
+
+    .sol div:nth-child(4) {
+        top: -10px;
+        right: -10px;
+    }
+
+    .sol div:nth-child(5) {
+        bottom: -10px;
+        left: -10px;
+    }
+
+    .sol div:nth-child(6) {
+        bottom: -10px;
+        right: -10px;
+    }
+</style>
 </html>
